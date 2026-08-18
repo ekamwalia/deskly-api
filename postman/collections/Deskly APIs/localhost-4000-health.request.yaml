@@ -1,6 +1,0 @@
-$kind: http-request
-name: 'localhost:4000/health'
-description: "Liveness probe. No authentication required."
-url: '{{baseURL}}/health'
-method: GET
-order: 1787037123666
