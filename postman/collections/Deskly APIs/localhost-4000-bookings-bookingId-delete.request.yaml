@@ -1,0 +1,16 @@
+$kind: http-request
+name: 'localhost:4000/bookings/:bookingId (DELETE)'
+description: 'Cancel a booking and release the desk.'
+url: '{{baseURL}}/bookings/:bookingId'
+method: DELETE
+auth:
+  type: apikey
+  credentials:
+    key: X-API-Key
+    value: demo-key
+params:
+  - type: path
+    key: bookingId
+    value: bkg_seed01
+    description: 'The ID of the booking to cancel.'
+order: 1787037123671

@@ -1,0 +1,11 @@
+$kind: http-request
+name: localhost:4000/desks
+description: ""
+url: '{{baseURL}}/desks'
+method: GET
+auth:
+  type: apikey
+  credentials:
+    key: X-API-Key
+    value: demo-key
+order: 1787037123665

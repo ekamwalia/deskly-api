@@ -1,0 +1,16 @@
+$kind: http-request
+name: 'localhost:4000/desks/:deskId'
+description: "Fetch a single desk by its ID."
+url: '{{baseURL}}/desks/:deskId'
+method: GET
+auth:
+  type: apikey
+  credentials:
+    key: X-API-Key
+    value: demo-key
+params:
+  - type: path
+    key: deskId
+    value: desk-1
+    description: 'The ID of the desk to fetch.'
+order: 1787037123667
